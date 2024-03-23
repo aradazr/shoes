@@ -1,16 +1,6 @@
-# shoes
+👟 An slider for Shoes shop,
+And a Cool Bottom Nav bar using https://pub.dev/packages/motion_tab_bar ,
+i Hope you enjoy it AND dont forget to HIT the star ⭐
+![Component 5](https://github.com/aradazr/shoes/assets/150952102/fd73727e-57bc-4f57-b7d7-758bb030610d)
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Component 4](https://github.com/aradazr/shoes/assets/150952102/d2163b15-5b47-4337-a607-f533260e2581)
