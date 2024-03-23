@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:motion_tab_bar/MotionTabBar.dart';
 import 'package:motion_tab_bar/MotionTabBarController.dart';
@@ -26,10 +24,11 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
+  // ignore: library_private_types_in_public_api
   _MyHomePageState createState() => _MyHomePageState();
 }
 
@@ -64,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     //* color of the app
-    Color color = Color.fromARGB(255, 217, 217, 217);
+    Color color = const Color.fromARGB(255, 217, 217, 217);
 
     Color backColor = const Color.fromARGB(255, 34, 34, 34);
 
@@ -75,13 +74,13 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
           child: Column(
             children: [
               Padding(
-                padding: EdgeInsets.fromLTRB(30, 25, 30, 0),
+                padding: const EdgeInsets.fromLTRB(30, 25, 30, 0),
                 child:
                 //! app bar
                  Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.menu,
                       color: Colors.white,
                       size: 45,
@@ -94,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                 ),
               ),
 
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
 
@@ -113,10 +112,10 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                       'Search Here',
                       style: GoogleFonts.playfairDisplay(fontSize: 20),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 90,
                     ),
-                    Icon(
+                    const Icon(
                       Icons.search,
                       weight: 1,
                       size: 40,
@@ -124,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 28,
               ),
 
@@ -166,14 +165,14 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                           borderRadius: BorderRadius.circular(27),
                           color: color),
                       child: Padding(
-                        padding: EdgeInsets.fromLTRB(0, 0, 3, 20),
+                        padding: const EdgeInsets.fromLTRB(0, 0, 3, 20),
                         child: Image.asset('assets/images/newb.png'),
                       ),
                     ),
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               )
 
@@ -189,7 +188,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                 ),
               ),
 
-               SizedBox(height: 15,),
+               const SizedBox(height: 15,),
 
 
               //* list view builder for shoes
@@ -208,7 +207,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                     
                     itemBuilder: (context, index) {
                     return Padding(
-                      padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                      padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                       child:
                       //grey background
                        Container(
@@ -241,7 +240,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                             ),
                           ),
 
-                          SizedBox(height: 3,),
+                          const SizedBox(height: 3,),
 
                           // jordan 1 low and the price
                           Row(
@@ -259,7 +258,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                             ],
 
                           ),
-                          SizedBox(height: 3,),
+                          const SizedBox(height: 3,),
 
                           //travis scott
                           Padding(
